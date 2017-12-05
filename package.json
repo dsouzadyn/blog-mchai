@@ -1,0 +1,26 @@
+{
+  "name": "mchai",
+  "version": "1.0.0",
+  "description": "Mocha and Chaijs tutorial app",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node index.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "tutorial",
+    "blog"
+  ],
+  "author": "Dylan Dsouza",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.0.1"
+  }
+}
