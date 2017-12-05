@@ -19,6 +19,7 @@ describe('Quotes API', () => {
     done();
   })
   // Create a valid document to send with our request
+  // This will be used for all requests requiring it
   const quoteDoc = {
     quote: 'Test quote goes here',
     author: 'John Doe'
@@ -99,7 +100,7 @@ describe('Quotes API', () => {
 
   // DELETE /api/quotes/:id
   describe('DELETE /api/quotes/:id', () => {
-    it('should get a post given it\'s id', (done) => {
+    it('should delete a post given it\'s id', (done) => {
       // We first need to create the document
       // And then we delete the document
       chai.request(server)
